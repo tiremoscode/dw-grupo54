@@ -1,0 +1,92 @@
+/* Media Queries */
+
+/* Como deseo que se vea en Desktop */
+body {
+    background-color: blue;
+}
+
+header {
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.logotipo {
+    width: 300px;
+    height: 150px;
+}
+
+nav {
+    background-color: green;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* Como deseo que se vea en Móviles */
+
+@media (max-width: 767px) {
+    body {
+        background-color: green;
+    }
+
+    header {
+        background-color: yellow;
+        flex-direction: column;
+        width: 100%;
+        border: 4px solid orange;
+    }
+
+    .logo {
+        width: 100%;
+        height: 100%;
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .logotipo {
+        width: 250px;
+        height: 120px;
+    }
+
+    nav {
+        background-color: purple;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin-top: 20px;
+    }
+}
