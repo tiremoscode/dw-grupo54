@@ -8,3 +8,9 @@ function helloWorld(name) {
 
 holaMundo('Alberto');
 helloWorld('Zaira');
+
+function holaMundo(nombre) {
+    console.log('Hola, ' + nombre);
+}
+
+holaMundo('Marisol')
