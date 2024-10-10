@@ -8,4 +8,4 @@ Lerma, Estado de México
 
 ## Hobbie favorito 
 
-Mi hobbie favorito es pintar
+Mi hobbie es pintar
