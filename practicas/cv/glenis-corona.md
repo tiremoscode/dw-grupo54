@@ -2,5 +2,8 @@
 
 Glenis Corona Lemus glenisc163@gmail.com
 
-Mi Hobbie es es Hobbie
 
+
+
+Queretaro
+Leer manga
