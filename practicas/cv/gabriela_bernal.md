@@ -2,10 +2,10 @@
 
 Gabriela Bernal Ramirez gabrielabernalramirez9@gmail.com
 
-## Ciudad donde vivo
+## Ciudad donde vivo:
 
 Lerma, Estado de México
 
-## Hobbie favorito 
+## Hobbie favorito:
 
 Mi hobbie favorito es pintar
