@@ -13,3 +13,5 @@ function ciaoMondo(nome) {
 holaMundo('Alberto');
 helloWorld('Zaira');
 ciaoMondo('Rebeca');
+bonjourMonde('Valeria');
+helloBeautiful('Valeria');
