@@ -6,10 +6,11 @@ function helloWorld(name) {
     console.log('Hello ' + name);
 }
 
-function helloWorld (name) {
-console.log ('hello' + name);
+function ciaoMondo(nome) {
+    console.log('Ciao ' + nome);
 }
 
 holaMundo('Alberto');
 helloWorld('Zaira');
 helloWorld ('Sofia');
+ciaoMondo('Rebeca');
