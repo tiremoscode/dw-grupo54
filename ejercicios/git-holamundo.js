@@ -8,3 +8,4 @@ function helloWorld(name) {
 
 holaMundo('Alberto');
 helloWorld('Zaira');
+holaMundo('Frida');
