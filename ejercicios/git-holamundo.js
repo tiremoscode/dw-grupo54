@@ -16,6 +16,7 @@ function holaGrupo54(alumna) {
 
 holaMundo('Alberto');
 helloWorld('Zaira');
+helloWorld('Miriam');
 helloWorld('Glenis');
 helloWorld ('Sofia');
 ciaoMondo('Rebeca');
