@@ -6,11 +6,19 @@ function helloWorld(name) {
     console.log('Hello ' + name);
 }
 
-holaMundo('Alberto');
-helloWorld('Zaira');
-
-function holaMundo(nombre) {
-    console.log('Hola, ' + nombre);
+function ciaoMondo(nome) {
+    console.log('Ciao ' + nome);
 }
 
-holaMundo('Marisol')
+function holaGrupo54(alumna) {
+    console.log('Bienvenida al curso' + alumna);
+}
+
+holaMundo('Alberto');
+helloWorld('Zaira');
+helloWorld('Miriam');
+helloWorld('Glenis');
+helloWorld ('Sofia');
+ciaoMondo('Rebeca');
+holaGrupo54('KarlaFlores');
+helloWorld('Ana');
