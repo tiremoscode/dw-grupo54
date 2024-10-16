@@ -14,3 +14,4 @@ holaMundo('Alberto');
 helloWorld('Zaira');
 helloWorld ('Sofia');
 ciaoMondo('Rebeca');
+holaMundo('Frida');
