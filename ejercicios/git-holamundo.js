@@ -25,6 +25,7 @@ function guadalupe(_nombre){
 guadalupe('Guadalupe');
 holaMundo('Alberto');
 helloWorld('Zaira');
+helloWorld('Miriam');
 helloWorld('Glenis');
 helloWorld ('Sofia');
 ciaoMondo('Rebeca');
