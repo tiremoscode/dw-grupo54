@@ -19,8 +19,9 @@ function guadalupe(_nombre){
     funcionesLupita.forEach(funcion => funcion(_nombre));
 }
 
+guadalupe('Guadalupe');
 holaMundo('Alberto');
 helloWorld('Zaira');
 ciaoMondo('Rebeca');
-guadalupe('Guadalupe');
+
 
