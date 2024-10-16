@@ -19,7 +19,7 @@ function niHao(nombre){
 }
 function guadalupe(_nombre){
     const funcionesLupita = [holaMundo, helloWorld, ciaoMondo, niHao];
-    funcionesLupita.forEach(funcion => funcion('Lupita'));
+    funcionesLupita.forEach(funcion => funcion(_nombre));
 }
 
 guadalupe('Guadalupe');
