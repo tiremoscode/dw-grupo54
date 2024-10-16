@@ -14,8 +14,8 @@ function holaGrupo54(alumna) {
     console.log('Bienvenida al curso' + alumna);
 }
 
-function bonjourLeMonde(nom) {
-    console.log('bonjour ' + nom);
+function auRevoirLeMonde(nom) {
+    console.log('Au re voir ' + nom);
 }
 
 holaMundo('Alberto');
@@ -24,4 +24,4 @@ helloWorld('Glenis');
 helloWorld ('Sofia');
 ciaoMondo('Rebeca');
 holaGrupo54('KarlaFlores');
-bonjourLeMonde ('Maria');
+auRevoirLeMonde ('Maria');
