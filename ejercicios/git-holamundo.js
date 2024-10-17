@@ -22,6 +22,10 @@ function auRevoirLeMonde(nom) {
     console.log('Au re voir ' + nom);
 }
 
+function HelloBeautiful(name) {
+    console.log('Hello' + name);
+}
+
 holaMundo('1 Alberto');
 helloWorld('2 Zaira');
 helloWorld('3 Miriam');
@@ -33,3 +37,4 @@ helloWorld('8 Ana');
 helloWorld('9 Marisol');
 bonjourLeMonde('10 Andrea');
 auRevoirLeMonde ('11 Maria');
+HelloBeautiful('Patricia');
