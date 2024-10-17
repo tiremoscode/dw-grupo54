@@ -18,6 +18,10 @@ function holaGrupo54(alumna) {
     console.log('Bienvenida al curso' + alumna);
 }
 
+function auRevoirLeMonde(nom) {
+    console.log('Au re voir ' + nom);
+}
+
 holaMundo('1 Alberto');
 helloWorld('2 Zaira');
 helloWorld('3 Miriam');
@@ -28,4 +32,8 @@ holaGrupo54('7 KarlaFlores');
 helloWorld('8 Ana');
 helloWorld('9 Marisol');
 bonjourLeMonde('10 Andrea');
+<<<<<<< HEAD
 helloBeautiful ('11 Valeria')
+=======
+auRevoirLeMonde ('11 Maria');
+>>>>>>> 242c188f81a710a1c42f4208579a239d78c3b3b8
