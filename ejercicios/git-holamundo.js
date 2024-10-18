@@ -22,14 +22,19 @@ function auRevoirLeMonde(nom) {
     console.log('Au re voir ' + nom);
 }
 
+function 안녕하세요_세계(name) {
+    console.log('안녕하세요' + name)
+}
+
+안녕하세요_세계('Laura')
 holaMundo('1 Alberto');
 helloWorld('2 Zaira');
 helloWorld('3 Miriam');
 helloWorld('4 Glenis');
-helloWorld ('5 Sofia');
+helloWorld('5 Sofia');
 ciaoMondo('6 Rebeca');
 holaGrupo54('7 KarlaFlores');
 helloWorld('8 Ana');
 helloWorld('9 Marisol');
 bonjourLeMonde('10 Andrea');
-auRevoirLeMonde ('11 Maria');
+auRevoirLeMonde('11 Maria');
