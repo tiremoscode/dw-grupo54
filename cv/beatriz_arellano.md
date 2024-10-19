@@ -1,7 +1,9 @@
 ## MI CV en Markdown
 
-Beatriz Arellano Grajales beatrizg@yahoo.com.mx
+Beatriz Arellano Grajales 
+
+_beatrizg@yahoo.com.mx_
 
 Hermosillo, Sonora, México
 
-Me encnata dar largas caminatas
+Me encanta dar largas caminatas
