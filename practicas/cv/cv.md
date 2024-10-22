@@ -1,5 +1,9 @@
-## Mi CV en markdown
+## Cv en Markdown
 
-Ana Estela Navarro Vázquez navarrovazquezana@gmail.com
+###Beatriz Arellano Grajales 
 
-Guadalajara, Jalisco 
+barellano424@estudiantes.ciad.mx
+
+Hermosillo Sonora
+Mi hobbie es tener largas caminatas
+
