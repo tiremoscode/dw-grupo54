@@ -32,8 +32,8 @@ holaGrupo54('7 KarlaFlores');
 helloWorld('8 Ana');
 helloWorld('9 Marisol');
 bonjourLeMonde('10 Andrea');
-<<<<<<< HEAD
-helloBeautiful ('11 Valeria')
-=======
 auRevoirLeMonde ('11 Maria');
->>>>>>> 242c188f81a710a1c42f4208579a239d78c3b3b8
+holaMundo('12 Salma');
+holaMundo('13 Karla');
+holaMundo('14 Frida');
+holaMundo('15 libertad');
