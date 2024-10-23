@@ -6,6 +6,9 @@ function helloWorld(name) {
     console.log('Hello ' + name);
 }
 
+
+
+helloWorld('Claudia');
 function bonjourLeMonde(name) {
     console.log('Bonjour le monde ' + name);
 }
@@ -23,7 +26,7 @@ function auRevoirLeMonde(nom) {
 }
 
 function helloBeautiful(alumna) {
-    console.log('Hello, beautiful' + nom)
+    console.log('Hello, beautiful' + alumna);
 }
 
 holaMundo('1 Alberto');
@@ -42,3 +45,4 @@ holaMundo('13 Karla');
 holaMundo('14 Frida');
 holaMundo('15 libertad');
 helloBeautiful ('16 Valeria');
+helloWorld('17 Claudia');
