@@ -22,6 +22,10 @@ function auRevoirLeMonde(nom) {
     console.log('Au re voir ' + nom);
 }
 
+function helloBeautiful(alumna) {
+    console.log('Hello, beautiful' + nom)
+}
+
 holaMundo('1 Alberto');
 helloWorld('2 Zaira');
 helloWorld('3 Miriam');
@@ -37,3 +41,4 @@ holaMundo('12 Salma');
 holaMundo('13 Karla');
 holaMundo('14 Frida');
 holaMundo('15 libertad');
+helloBeautiful ('16 Valeria');
