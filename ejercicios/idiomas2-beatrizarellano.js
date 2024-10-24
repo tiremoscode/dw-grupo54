@@ -1,6 +1,29 @@
+
+//Instruciones del ejercio: Una aplicación que me pida mi nombre y en que idioma deseo que me salude
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('¿Cómo te llamas? ', (nombre) => {
+    rl.question('¿En qué idioma quieres que te salude? (1: Español, 2: Inglés) ', (idioma) => {
+        const saludo = idioma === '2'
+            ? `Hello, welcome, ${nombre}`
+            : `Hola, bienvenido, ${nombre}`;
+        console.log(saludo);
+        rl.close();
+    });
+});
+
+
+// ****************************************************************A continaución ejercicios de practica para el curso de JavaScript*****************************************
+
 // *** Opción 1 de codigo ***
 
-const readline = require('readline').createInterface({
+/* const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
 });
@@ -12,7 +35,7 @@ readline.question('¿Cómo te llamas? ', nombre => {
         );
         readline.close();
     });
-});
+}); */
 
 
 // *** Opción 2 de codigo ***
