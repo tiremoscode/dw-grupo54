@@ -5,6 +5,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+
 rl.question('¿Cómo te llamas?', (name) => {
     rl.question('¿En que idioma quieres que te salude?, para español: 1 English: 2', (idiomaRespuesta) => {
         switch (idiomaRespuesta){
@@ -13,6 +14,9 @@ rl.question('¿Cómo te llamas?', (name) => {
                 break;
             case '2':
                 console.log('Hello, welcome to JavaScript curse  ' + name);
+                break;
+            default :
+                console.log(name + ', lo siento ,'+ idiomaRespuesta + ' no aplica como respuesta valida');
                 break;
         }
         rl.close();
