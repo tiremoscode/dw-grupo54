@@ -18,6 +18,15 @@ function holaGrupo54(alumna) {
     console.log('Bienvenida al curso' + alumna);
 }
 
+function niHao(nombre){
+    console.log('Nihao ' + nombre);
+}
+
+function guadalupe(_nombre){
+    const funcionesLupita = [holaMundo, helloWorld, ciaoMondo, niHao, bonjourLeMonde];
+    funcionesLupita.forEach(funcion => funcion(_nombre));
+}
+
 function olaMundo(name){
     console.log('ola' + name);
 }
@@ -50,3 +59,4 @@ helloWorld('17 Claudia');
 ciaoMondo('18 Daniela');
 helloWorld('19 Tairi');
 olaMundo('20 Ivett');
+guadalupe('21 Guadalupe');
