@@ -18,6 +18,10 @@ function holaGrupo54(alumna) {
     console.log('Bienvenida al curso' + alumna);
 }
 
+function olaMundo(name){
+    console.log('ola' + name);
+}
+
 function auRevoirLeMonde(nom) {
     console.log('Au re voir ' + nom);
 }
@@ -45,3 +49,4 @@ helloBeautiful ('16 Valeria');
 helloWorld('17 Claudia');
 ciaoMondo('18 Daniela');
 helloWorld('19 Tairi');
+olaMundo('20 Ivett');
