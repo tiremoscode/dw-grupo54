@@ -1,0 +1,85 @@
+css
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5D9F2;
+    font-family: Arial, sans-serif;
+}
+
+.rfcform {
+    background: #fff;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.rfcform input {
+    display: block;
+}
+
+.rfcform input[type="text"],
+.rfcform input[type="text"],
+.rfcform input[type="text"],
+.rfcform input[type="text"],
+.rfcform input[type="text"],
+.rfcform input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #226fc1;
+    font-family: arial;
+    font-size: 16px;
+}
+
+
+.rfcform input[type="text"]:focus,
+.rfcform input[type="text"]:focus,
+.rfcform input[type="text"]:focus,
+.rfcform input[type="text"]:focus,
+.rfcform input[type="text"]:focus,
+.rfcform input[type="text"]:focus {
+    border: 2px solid #4fb560;
+}
+
+.rfcform {
+    background: #9B7EBD;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+.rfcform button {
+    width: 200px;
+    background-color: #ffffff;
+    border: 2px solid #8008e2;
+    color: #8008e2;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rfcform button:hover {
+    background-color: #4fb560;
+    color: #ffffff;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
