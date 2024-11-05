@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>RFC sin homoclave</h1>
+        <p>Ingresa los datos que se solicitan para obtener el RFC sin homoclave.</p>
+    </div>
+
+    <div>
+        <label for="nombre">NOMBRE: </label>
+            <input type="text" id="nombre" required>
+        <label for="apellidoPaterno">APELLIDO PATERNO: </label>
+            <input type="text" id="apellidoPaterno" required>
+        <label for="apellidoMaterno">APELLIDO MATERNO: </label>
+            <input type="text" id="apellidoMaterno" required>
+        <label for="dia">DIA DE NACIMIENTO: </label>
+            <input type="number" placeholder="DD" id="dia" required>
+        <label for="mes">MES DE NACIMIENTO: </label>
+            <input type="number" placeholder="MM" id="mes" required>
+        <label for="anio">AÑO DE NACIMIENTO: </label>
+            <input type="number" placeholder="AAAA" id="anio" required>
+        <button onclick="obtenerRfc();">Enviar información</button>
+
+    </div>
+    <div id="resultado">
+        Resultado: 
+    </div>
+    <script src="rfcsalma.js"></script>
+</body>
+
+</html>
