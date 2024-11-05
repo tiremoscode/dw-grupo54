@@ -1,33 +1,35 @@
 function sumar() {
-    const numero1 = parseFloat(document.getElementById('numero1').value);
-    const numero2 = parseFloat(document.getElementById('numero2').value);
-    const resultado = numero1 + numero2;
-    document.getElementById('resultado').innerText = 'resultado: ' + resultado;
+    const valor1 = parseInt(document.getElementById('numero1').value);
+    const valor2 = parseInt(document.getElementById('numero2').value);
+
+    const suma = valor1 + valor2;
+    const mostrarSuma = document.getElementById('resultado');
+    mostrarSuma.innerText = suma;
 }
 
 function restar() {
-    const numero1 = parseFloat(document.getElementById('numero1').value);
-    const numero2 = parseFloat(document.getElementById('numero2').value);
-    const resultado = numero1 - numero2;
-    document.getElementById('resultado').innerText = 'resultado: ' + resultado;
+    const valor1 = parseInt(document.getElementById('numero1').value);
+    const valor2 = parseInt(document.getElementById('numero2').value);
+
+    const resta = valor1 - valor2;
+    const mostrarResta = document.getElementById('resultado');
+    mostrarResta.innerText = resta;
 }
 
-function multiplicacion() {
-    const numero1 = parseFloat(document.getElementById('numero1').value);
-    const numero2 = parseFloat(document.getElementById('numero2').value);
-    const resultado = numero1 * numero2;
-    document.getElementById('resultado').innerText = 'resultado: ' + resultado;
+function multiplicar() {
+    const valor1 = parseInt(document.getElementById('numero1').value);
+    const valor2 = parseInt(document.getElementById('numero2').value);
+
+    const producto = valor1 * valor2;
+    const mostrarProducto = document.getElementById('resultado');
+    mostrarProducto.innerText = producto;
 }
 
-function division() {
-    const numero1 = parseFloat(document.getElementById('numero1').value);
-    const numero2 = parseFloat(document.getElementById('numero2').value);
-    if (numero2 !== 0) {
-        const resultado = numero1 / numero2;
-        document.getElementById('resultado').innerText = 'resultado: ' + resultado;
-    } else {
-        document.getElementById('resultado').innerText = 'Error: División por cero';
-    }
-} 
+function dividir() {
+    const valor1 = parseFloat(document.getElementById('numero1').value);
+    const valor2 = parseFloat(document.getElementById('numero2').value);
 
-
+    const cociente = valor1 / valor2;
+    const mostrarCociente = document.getElementById('resultado');
+    mostrarCociente.innerText = cociente;
+}
