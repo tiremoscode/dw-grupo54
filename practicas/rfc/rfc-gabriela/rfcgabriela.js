@@ -10,7 +10,7 @@ function generarRfc() {
 
     const rfc = apellidoPaterno.slice(0,2) +
                 apellidoMaterno[0] +
-                nombre[0] +
+                nombre[0] + 
                 año + mes + dia + 'XXX';
     const mostrarRfc = document.getElementById('resultado');
     mostrarRfc.innerHTML = 'Su RFC es:  ' + rfc;
