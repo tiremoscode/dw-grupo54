@@ -33,18 +33,22 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
     document.getElementById('resultado').innerHTML = `<h2>RFC Generado:</h2><p>${rfc}</p>`;
 });
 
-function generarRFC(apellidoPaterno, apellidoMaterno, nombres, dia, mes, anio, numeroFijo) {
-    // Aqui quiero las primeras letras
-    const rfcApellidoPaterno = apellidoPaterno.charAt(0);
-    const rfcApellidoMaterno = apellidoMaterno.charAt(0);
-    const rfcNombre = nombres.split(" ")[0].charAt(0); // Primer nombre
+function generarRFC(apellidoPaterno, apellidoMaterno, nombres, dia, mes, anio, numeroFijo) { 
+    
+    const rfcApellidoPaterno = apellidoPaterno.slice(0, 2).toUpperCase();
+    
+   
+    const rfcApellidoMaterno = apellidoMaterno.charAt(0).toUpperCase();
+    
+    
+    const rfcNombre = nombres.split(" ")[0].charAt(0).toUpperCase();
 
-    // Aqui puse esto para formatear la fecha si es que no se puso bien, ejem: 120701
-    const rfcFecha = `${anio}${mes.toString().padStart(2, '0')}${dia.toString().padStart(2, '0')}`;
+    
+    const rfcFecha = `${anio.toString().slice(-2)}${mes.toString().padStart(2, '0')}${dia.toString().padStart(2, '0')}`;
 
-    // Concatene aqui para crear el rfc
+ 
     const rfc = `${rfcApellidoPaterno}${rfcApellidoMaterno}${rfcNombre}${rfcFecha}${numeroFijo}`;
 
-    // Esta función es para poner en mayusculas lo que solicite, si quisiera la cadena (rfc) en minusculas pondria "toLowerCase"
-    return rfc.toUpperCase();
+
+    return rfc;
 }
