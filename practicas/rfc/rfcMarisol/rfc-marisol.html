@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genera tu RFC</title>
+</head>
+<body>
+    <header>
+        <h1>Genera tu RFC</h1>
+        <h3>Ingresa los datos que se te solicitan.</h3>
+    </header>
+
+    <section class="nombreUsuario">
+
+        <p>Nombre del solicitante.</p>
+        <p>Ingrese los datos que se te solicitan (evita usar acentos).</p>
+        <div class="nombre">
+            <label for="">Nombre: </label>
+            <input type="text" placeholder="Ej. Marisol" id="nombre1">
+        </div>   
+    
+        <div class="apellidoP">
+            <label for="">Apellido paterno: </label>
+            <input type="text" placeholder="Ej. Martinez" id="apellido1">
+        </div>
+
+        <div class="apellidoM">
+            <label for="">Apellido materno</label>
+            <input type="text" placeholder="Ej. Vadillo" id="apellido2">
+        </div>
+    </section>
+
+    <section class="fechaNacimiento">
+        <p>Fecha de nacimiento del solicitante.</p>
+        <p>Ingrese los datos en formato numérico.</p>
+        <div class="dia">
+            <label for="">Día: </label>
+            <input type="number" min="1" max="31" id="dia1" placeholder="5">
+        </div>
+        <div class="mes">
+            <label for="">Mes: </label>
+            <input type="number" min="1" max="12" id="mes1" placeholder="7">
+        </div>
+        <div class="anio">
+            <label for="">Año: </label>
+            <input type="number" min="1930" max="2024" id="anio1" placeholder="1996">
+        </div>
+    </section>
+
+    <section class="envio">
+        <button class="enviar" onclick="generarRfc()">Generar</button>
+    </section>
+
+    <section>
+        <div id="rfc">
+            Tu RFC es el siguiente: 
+        </div>
+    </section>
+
+    <script src="rfc-marisol.js"></script>
+</body>
+</html>
