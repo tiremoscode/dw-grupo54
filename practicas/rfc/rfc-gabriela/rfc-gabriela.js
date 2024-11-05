@@ -1,5 +1,3 @@
-
-
 function generarRfc() {
     const nombre = document.getElementById('nombre').value.toUpperCase();
     const apellidoPaterno = document.getElementById('apellidoPaterno').value.toUpperCase();
