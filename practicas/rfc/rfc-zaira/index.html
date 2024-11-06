@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-rfc.css">
+    <title>Genera RFC</title>
+</head>
+<body>
+    <div class="container text-center" id="container1">
+        <h1><b>Bienvenido/a</b></h1>
+        <h3>Ingresa tus datos y genera tu RFC*</h3>
+        <div class= "col d-flex justify-content-center" id="form" >
+            
+            <form class="mt-5">
+                <div class="form-group-name">
+                    <label for ='name'> Ingresa tu(s) nombre(s): </label>
+                        <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group-name">
+                    <label for ='lastName1'> Ingresa tu primer apellido: </label>
+                        <input type="text" class="form-control"  id="lastName1">
+                </div>
+                <div class="form-group-name">
+                    <label for ='lastName2'> Ingresa tu segundo apellido: </label>
+                        <input type="text" class="form-control"  id="lastName2">
+                </div>
+                <div class="form-group-date">
+                    <label for="date">Ingresa tu fecha de nacimiento:</label>
+                    <input type="date" class="form-control" id="date" name="trip-start" value="" min="1800-01-01" max="2024-12-31" />
+                </div>
+                <button type="button" class="btn  mt-5" onclick="generateRfc()">Enviar</button>
+            </form>
+        </div>
+    </div>
+        
+        
+    
+    
+
+    <div id="generador-rfc" class= "col d-flex justify-content-center ">
+        <br><h4>RFC</h4>
+         
+
+
+    </div>
+    <footer  class= "col d-flex justify-content-center ">
+        *La aplicación genera homoclave estandarizada
+    </footer>
+    <script src="./main.js"> </script>
+
+</body>
+</html>
