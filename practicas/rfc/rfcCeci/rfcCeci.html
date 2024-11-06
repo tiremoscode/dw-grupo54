@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tarearfc.css">
+</head>
+
+<body>
+    <header>
+        <h1>MI RFC</h1>
+    </header>
+    <main>
+    <div>
+        <label for="">¡Obtén tu RFC sin homoclave!</label>
+        <br>
+        <label for="">Por favor, ingresa los datos solicitados</label>
+        <br>
+        <input type="text" placeholder="Nombre(s)" id="nombre" oninput="convertirAmayus('nombre')">
+        <input type="text" placeholder="Apellido paterno" id="apellidop" oninput="convertirAmayus('apellidop')">
+        <input type="text" placeholder="Apellido materno" id="apellidom" oninput="convertirAmayus('apellidom')">
+        <br>
+        <label for="">Por favor, ingresa tu fecha de nacimiento a dos dígitos </label><br>
+        <input type="number" placeholder="Día" id="dia"oninput="validarDig('dia')">
+        <input type="number" placeholder="Mes" id="mes"oninput="validarDig('mes')">
+        <input type="number" placeholder="Año" id="anio"oninput="validarDig('anio')">
+        <br><br>
+        <button onclick="Generarrfc();">Genera tu RFC</button><br><br>
+    </div>
+    <div id="resultado">
+        <br>
+        Tu RFC es:
+    </div>
+    <script src="tarearfc.js"></script>
+</main>
+    <footer>
+        <p>Los carácteres XXX representan la homoclave, por lo que para obtenerla deberá acudir al SAT (Servicio de Atención Tributaria) con previa cita.  <button><a href="https://citas.sat.gob.mx/">CITA SAT</a></button></p>
+        
+            </footer>
+</body>
+
+</html>
