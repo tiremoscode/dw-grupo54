@@ -12,5 +12,5 @@ function obtenerRFC() {
 
     const concatenados = aprfc + amrfc + nmrfc + aniodenancimiento + mesdenacimiento + diadenacimiento + "xxx";
     const mostrarrfc = document.getElementById("resultado");
-    mostrarrfc.innerText = concatenados;
+    mostrarRfc.innerText = concatenados.toUpperCase();
 }
