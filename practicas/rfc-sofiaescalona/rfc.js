@@ -51,4 +51,5 @@ function generarRFC(apellidoPaterno, apellidoMaterno, nombres, dia, mes, anio, n
 
 
     return rfc;
+    
 }
