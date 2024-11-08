@@ -12,8 +12,15 @@
 </head>
 
 <body>
+    <div id="limpiar">
+        <button class="botondelgado" type="button" onclick="clean();"> Limpiar Formulario</button>
+    </div>
     <div class="formulario">
+
         <div class="cajahija">
+            <div>
+                <h1 id="Titulo" class="centrar">Genera tu RFC sin Homoclave</h1>
+            </div>
             <div>
                 <label for="">Ingresa tu primer Nombre</label>
                 <input type="text" placeholder="Nombre" id="Nombre">
@@ -30,32 +37,30 @@
             </div>
             <div>
                 <label for="">Ingresa tu año de nacimiento</label>
-                <input type="number" minlength="40" maxlength="99"
-                    placeholder="Año de nacimiento-solo ultimos dos digitos" id="AnoNacimiento">
+                <input type="number" minlength="1940" maxlength="2024" placeholder="Año de nacimiento"
+                    id="AnoNacimiento">
 
             </div>
             <div>
                 <label for="">Ingresa mes de nacimiento</label>
-                <input type="number" minlength="01" maxlength="12" placeholder="Mes de nacimiento-dos digitos"
-                    id="MesNacimiento">
+                <input type="number" minlength="01" maxlength="12" placeholder="Mes de nacimiento" id="MesNacimiento">
             </div>
             <div>
                 <label for="">Ingresa dia de nacimiento</label>
-                <input type="number" minlength="01" maxlength="31" placeholder="Día de nacimiento-dos digitos"
-                    id="DiaNacimiento">
+                <input type="number" minlength="01" maxlength="31" placeholder="Día de nacimiento" id="DiaNacimiento">
+            </div>
+            <div id="Botoncito">
+                <button class="centrar" onclick="rfc();"> Generar RFC Generico " XXX "</button>
             </div>
             <div>
-                <button onclick="rfc();"> Generar RFC Generico " XXX "</button>
-            </div>
-            <div>
-                <h1 id="RFC">***---***</h1>
+                <h1 id="RFC" class="centrar">***---***</h1>
             </div>
         </div>
     </div>
 
 
 
-    <script src="/practicas/rfc/rfclau.js"></script>
+    <script src="/practicas/rfc/rfc-lau/rfclau.js"></script>
 </body>
 
 </html>

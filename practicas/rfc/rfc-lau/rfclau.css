@@ -17,17 +17,75 @@
     position: relative;
     overflow: hidden;
     width: 600px;
-    height: 900px;
+    height: 689px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.5);
+    z-index: 5;
 }
 
 div{
-    background-color: rgb(51, 214, 219);
-    /* width: 600px; */
-    padding: 30px;
+    background-color:pink;
+    padding: 20px 30px;
+
 }
 .cajahija{
-    background-color: purple;
+    height: 789px;
     position: absolute;
     right: 0%;
     left: 0%;
+    top: 0%;
+}
+button{
+    background-color: fuchsia;
+    border-style: solid;
+    border-color: darkmagenta;
+    border-radius: 25px;
+    padding: 10px 20px; 
+}
+input{
+    width: 150px;
+}
+#Titulo{
+    font-size:30px;
+    text-align: center;
+
+}
+h1{
+    font-size:30px;
+    position: relative;
+    /* left: 20%; */
+    margin-top: 10px;
+    text-align: center;
+}
+label{
+    position: relative;
+    left: 10%;
+}
+input{
+    position: absolute;
+    right: 10%;
+    text-align: center;
+    border-radius: 5px;
+    border-color: rgba(0,0,0,0.5);
+}
+input::selection{
+    border-color: rgba(0,0,0,1);
+    background-color: rgba(139, 0, 139,0.5);
+}
+#limpiar{
+    background-color:rgba(255, 255, 255,0);
+    font-size:20px;
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+    margin-top: 10px;
+    z-index: 15;
+}
+#Botoncito{
+    text-align: center;
+
+}
+.botondelgado{
+    padding: 0%;
 }
