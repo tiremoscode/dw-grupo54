@@ -12,15 +12,19 @@ function palabra(w) { // esta función la robe de internet porque no supe como h
                 return w[0] + 0;
 }
 
+const   dia         = document.getElementById('DiaNacimiento').value,
+        mes         = document.getElementById('MesNacimiento').value,
+        ano         = document.getElementById('AnoNacimiento').value,
+        nombre      = document.getElementById('Nombre').value,
+        apellido1   = document.getElementById('apellido1').value,
+        apellido2   = document.getElementById('apellido2').value;
 
-function rfc() {
-        const dia         = document.getElementById('DiaNacimiento').value;
-        const mes         = document.getElementById('MesNacimiento').value;
-        const ano         = document.getElementById('AnoNacimiento').value;
-        const nombre      = document.getElementById('Nombre').value.toUpperCase();
-        const apellido1   = document.getElementById('apellido1').value.toUpperCase();
-        const apellido2   = document.getElementById('apellido2').value.toUpperCase();
+function rfc(dia , mes, ano, nombre, apellido1, apellido2) {
         
+        if(dia  || mes || ano || nombre || apellido1 || apellido2 = ''){
+                alert 'Falta información';
+                return;
+        }
         const fecha =  `${ano}${mes}${dia}` ;
         const primLetrApell =palabra(apellido1);
         const rfc = '*** '+  primLetrApell + apellido2.slice(0,1) + nombre.slice(0,1) +fecha + "XXX ***";

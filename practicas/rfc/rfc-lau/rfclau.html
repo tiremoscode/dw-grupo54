@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio RFC</title>
+    <link rel="icon" type="image/x-icon" href="recursos/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="rfclau.css">
+</head>
+
+<body>
+    <div class="formulario">
+        <div class="cajahija">
+            <div>
+                <label for="">Ingresa tu primer Nombre</label>
+                <input type="text" placeholder="Nombre" id="Nombre">
+            </div>
+            <div>
+                <label for="">Ingresa tu primer apellido ( Paterno )</label>
+                <input type="text" placeholder="Apellido" id="apellido1">
+
+            </div>
+            <div>
+                <label for="">Ingresa tu segundo apellido ( Materno ) </label>
+                <input type="text" placeholder="Apellido" id="apellido2">
+
+            </div>
+            <div>
+                <label for="">Ingresa tu año de nacimiento</label>
+                <input type="number" minlength="40" maxlength="99"
+                    placeholder="Año de nacimiento-solo ultimos dos digitos" id="AnoNacimiento">
+
+            </div>
+            <div>
+                <label for="">Ingresa mes de nacimiento</label>
+                <input type="number" minlength="01" maxlength="12" placeholder="Mes de nacimiento-dos digitos"
+                    id="MesNacimiento">
+            </div>
+            <div>
+                <label for="">Ingresa dia de nacimiento</label>
+                <input type="number" minlength="01" maxlength="31" placeholder="Día de nacimiento-dos digitos"
+                    id="DiaNacimiento">
+            </div>
+            <div>
+                <button onclick="rfc();"> Generar RFC Generico " XXX "</button>
+            </div>
+            <div>
+                <h1 id="RFC">***---***</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/practicas/rfc/rfclau.js"></script>
+</body>
+
+</html>

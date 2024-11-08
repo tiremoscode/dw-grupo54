@@ -1,0 +1,33 @@
+@font-face {
+    font-family:"Pacifico" ;
+    src: url('recursos/Pacifico/Pacifico-Regular.ttf');
+}
+
+* {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    margin: 0%;
+    padding: 0%;
+}
+
+.formulario{
+    background-color: fuchsia;
+    margin: 20px auto;
+    /* padding: 30px; */
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 900px;
+}
+
+div{
+    background-color: rgb(51, 214, 219);
+    /* width: 600px; */
+    padding: 30px;
+}
+.cajahija{
+    background-color: purple;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+}
