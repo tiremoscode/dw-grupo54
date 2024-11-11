@@ -14,6 +14,7 @@ function palabra(w) { // esta función la robe de internet porque no supe como h
 
 
 function rfc() {
+        
         const divRfc = document.getElementById('RFC');
         const   dia         = document.getElementById('DiaNacimiento').value,
                 mes         = document.getElementById('MesNacimiento').value,
@@ -42,9 +43,11 @@ function rfc() {
                         return;
                 }else{
                         if(dia.length == 1){
-                                dia = '0' + dia
+                                alert ('El dia debe ser de 2 digitos');
+                                return;
                         }else if(mes.length == 1){
-                                mes = '0' + mes
+                                alert ('El mes debe ser de 2 digitos');
+                                return;
                         }
 
                         alert( `  tu RFC es : ${correcto()}   `  );
