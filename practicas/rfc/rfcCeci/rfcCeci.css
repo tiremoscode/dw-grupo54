@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    padding: 10px;
+    min-height: 100%;
+    background-color: #8ba6ac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Itim", serif;
+    font: weight 800;
+    font-style: normal
+}
+
+main {
+    min-height: 100%;
+    background-color: #d7d7b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
