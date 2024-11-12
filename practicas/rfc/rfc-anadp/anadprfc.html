@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de RFC</title>
+</head>
+
+<body>
+    <h1>Calcula tu RFC</h1>
+    <form id="rfcForm">
+
+        <label for="">Nombre(s)</label>
+        <input type="text" id="nombre" pattern="[A-Z\s]+" oninput="this.value = this.value.toUpperCase()" required><br>
+
+        <label for="">Apellido Paterno</label>
+        <input type="text" id="apellidoPaterno" pattern="[A-Z\s]+" oninput="this.value = this.value.toUpperCase()"
+            required><br>
+
+        <label for="">Apellido Materno</label>
+        <input type="text" id="apellidoMaterno" pattern="[A-Z\s]+" oninput="this.value = this.value.toUpperCase()"
+            required><br>
+
+        <label for="">Día de Nacimiento (2 dígitos)</label>
+        <input type="number" id="diaNacimiento" min="1" max="31" required><br>
+
+        <label for="">Mes de Nacimiento (2 dígitos)</label>
+        <input type="number" id="mesNacimiento" min="1" max="12" required><br>
+
+        <label for="">Año de Nacimiento (2 dígitos)</label>
+        <input type="number" id="anioNacimiento" min="0" max="99" required><br>
+
+        <button type="button" onclick="calcularRFC();">Calcular RFC</button>
+    </form>
+    <div id="resultado">
+        Tu RFC:
+    </div>
+    <script src="anadprfc.js"></script>
+</body>
+
+</html>
