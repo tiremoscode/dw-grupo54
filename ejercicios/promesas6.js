@@ -1,6 +1,32 @@
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('¿Qué pokemon es?', (pokemon) => {
+    leerDatosPokemon(pokemon);
+    rl.close();
+});
+
+const leerDatosPokemon = (pokemon) => {
+    obtenerPokemon(pokemon)
+        .then((pokemonEncontrado) => {
+            console.log('Si lo encontre');
+            console.log('Nombre', pokemonEncontrado.nombre);
+            console.log('Tipo:', pokemonEncontrado.tipo);
+            console.log('Ataque:', pokemonEncontrado.ataque);
+            console.log('Color:', pokemonEncontrado.color);
+            console.log('Evoluciones:', pokemonEncontrado.evoluciones.join(", "));
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+}
+
 const obtenerPokemon = (nombrePokemon) => {
     return new Promise((resolve, reject) => {
-
         // Simular una solicitud asincrona de información de un pokemón
         const pokemonDatabase = {
             "pikachu": {
@@ -42,41 +68,3 @@ const obtenerPokemon = (nombrePokemon) => {
         }
     })
 };
-
-obtenerPokemon('Squirtle')
-    .then((pokemonEncontrado) => {
-        console.log('Si lo encontre');
-        console.log('Nombre', pokemonEncontrado.nombre);
-        console.log('Tipo:', pokemonEncontrado.tipo);
-        console.log('Ataque:', pokemonEncontrado.ataque);
-        console.log('Color:', pokemonEncontrado.color);
-        console.log('Evoluciones:', pokemonEncontrado.evoluciones.join(", "));
-    })
-    .catch((error) => {
-        console.log(error);
-    });
-
-
-obtenerPokemon('Eevee')
-    .then((pokemonEncontrado) => {
-        console.log('Si lo encontre');
-    })
-    .catch((error) => {
-        console.log(error);
-    });
-
-obtenerPokemon('Beedrill')
-    .then((pokemonEncontrado) => {
-        console.log('Si lo encontre');
-    })
-    .catch((error) => {
-        console.log(error);
-    });
-
-obtenerPokemon('Audino')
-    .then((pokemonEncontrado) => {
-        console.log('Si lo encontre');
-    })
-    .catch((error) => {
-        console.log(error);
-    });
