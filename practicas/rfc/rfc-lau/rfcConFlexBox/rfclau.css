@@ -1,0 +1,176 @@
+/* 
+* {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    margin: 0%;
+    padding: 0%;
+} */
+
+* {
+    font-family: "Cookie", cursive;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario {
+    display: flex;
+    background-color: fuchsia;
+    margin: 20px auto;
+    max-width: 60%;
+    /* height: 680px; */
+    border-radius: 25px;
+    border: 3px solid rgb(149, 24, 180);
+    z-index: 5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    background: none;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+}
+
+button {
+    background-color: rgb(248, 83, 185);
+    border: 2px solid;
+    border-color: rgb(128, 21, 150);
+    border-radius: 25px;
+    margin: 0%;
+    padding: 10px 20px;
+    color: rgb(59, 8, 70) ;
+    font-weight: bold;
+}
+
+#Titulo {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 1.4rem;
+    padding-bottom: 0.5 rem;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0px;
+}
+
+input[type="number"],input[type="text"]{
+    display: flex;
+    flex-wrap: nowrap;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(199, 250, 246);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input[type="number"]:focus,input[type="text"]:focus {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(184, 244, 247);
+    color: #173b7b;
+}
+input[type="number"]::selection,input[type="text"]::selection{
+    border: 3px solid rgba(31, 19, 19,0.8);
+    background-color: rgb(240, 255, 78);
+    color: #030303;
+}
+#limpiar {
+    background-color: rgba(28, 22, 22, 0);
+    font-size: 2rem;
+    margin: 10px;
+    z-index: 150;
+    position: fixed;
+    bottom: 5%;
+    left: 35%;
+}
+
+.botoncentral:hover, .botondelgado:hover{
+    color: #ffffff;
+    background-color: rgb(250, 6, 140);
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+}
+.botoncentral:focus, .botondelgado:focus{
+    color: #ffffff;
+    background-color: rgb(250, 6, 140);
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+}
+.botondelgado {
+    padding: 1% 3%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 10px;
+    margin-right: 30px;
+    width: 20%;
+}
+.fondo{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 915px) {
+        #RFC{
+            font-size: 2rem;
+        }
+        .botondelgado {
+            font-size: 1rem;
+        }
+        .botoncentral{
+            font-size: 2rem;
+
+        }
+}
+@media screen and (max-width: 715px) {
+    #RFC{
+        font-size: 2rem;
+    }
+    .botondelgado {
+        font-size: 0.7rem;
+    }
+    #Titulo {
+        font-size: 2rem;
+    }
+    .botoncentral{
+        font-size: 1.4rem;
+
+    }
+}
+@media screen and (max-width: 497px) {
+    #RFC{
+        font-size: 1.7rem;
+    }
+    #Titulo {
+        font-size: 1.7rem;
+    }
+    .botoncentral{
+        font-size: 1.2rem;
+
+    }
+}
+@media screen and (max-width: 497px) {
+    #RFC{
+        font-size: 1.4rem;
+    }
+    #Titulo {
+        font-size: 1.4rem;
+    }
+    .botoncentral{
+        font-size: 1rem;
+
+    }
+}
