@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rfc</title>
+</head>
+<body>
+    <div>
+        <h1> practica rfc</h1>
+      
+    </div>
+    <div>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" required>
+        <label for="apellidoPaterno">Apellido Paterno:</label>
+        <input type="text" id="apellidoPaterno" required>
+        <label for="apellidoMaterno">Apellido Materno:</label>
+        <input type="text" id="apellidoMaterno" required>
+        <label for="dia">Día de nacimiento:</label>
+        <input type="number" placeholder="00" id="dia"required>
+        <label for="mes">Mes de nacimiento:</label>
+        <input type="number" placeholder="MM" id="mes" required>
+        <label for="anio">Año de nacimiento:</label>
+        <input type="number" placeholder="AAAA"  id="anio" required>
+        <button onclick="obtenerRFC();">enviar información</button>
+    </div>
+
+    <div id="resultado">
+        resultado:
+    </div>
+    <script src="rfc-brenda.js"></script>
+    
+</body>
+</html>

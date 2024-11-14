@@ -39,6 +39,14 @@ function helloBeautiful(alumna) {
     console.log('Hello, beautiful' + alumna);
 }
 
+function 안녕하세요_세계(name){
+    console.log('안녕하세요 '+ name);
+}
+
+function halloWelt(name){
+    console.log('Hallo Welt ' + name);
+}
+
 holaMundo('1 Alberto');
 helloWorld('2 Zaira');
 helloWorld('3 Miriam');
@@ -60,3 +68,7 @@ ciaoMondo('18 Daniela');
 helloWorld('19 Tairi');
 olaMundo('20 Ivett');
 guadalupe('21 Guadalupe');
+안녕하세요_세계('22 Laura')
+holaMundo('23 Beatriz');
+holaMundo('24 anavanessa');
+halloWelt('25 DanielaRod');

@@ -1,0 +1,49 @@
+body {
+    font-family: monospace;
+}
+.btn {
+    border-bottom: 2px solid;
+    background-color: rgba(50, 115, 220, 0.3);
+    position: relative;
+    z-index: 1; /* Eleva el botón por encima de otros elementos */
+}
+
+#container1{
+    background-color: rgb(162, 142, 164);
+    position: relative;
+    border-color: black;
+    
+    border-radius: 2%;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    background-position: center center;
+
+
+}
+
+#generador-rfc {
+    border-radius: 20px;
+    border: 2px solid;
+    border-width: 1px;
+    background-position: center center;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+ h4 {
+    opacity: 30%;
+
+ }
+
+ footer {
+    margin-top: 5%;
+    margin-bottom: 2%; 
+ }
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de RFC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Generador de RFC</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="" class="form-label">Ingresa tu nombre (s):</label>
+                    <input type="text" class="form-control" placeholder="Ejemplo: MIRIAM" id="nombre">
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">Ingresa tu apellido paterno:</label>
+                    <input type="text" class="form-control" placeholder="Ejemplo: ANDREW" id="apellidoPaterno">
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">Ingresa tu apellido materno:</label>
+                    <input type="text" class="form-control" placeholder="Ejemplo: QUINTANA" id="apellidoMaterno">
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">Ingresa tu día de nacimiento (2 dígitos):</label>
+                    <input type="number" class="form-control"  placeholder="Ejemplo: 01" id="dia">
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">Ingresa tu mes de nacimiento (2 dígitos):</label>
+                    <input type="number" class="form-control"  placeholder="Ejemplo: 09" id="mes">
+                </div>
+                <div class="col-md-4">
+                    <label for="" class="form-label">Ingresa tu año de nacimiento:</label>
+                    <input type="number" class="form-control"  placeholder="Ejemplo: 2001" id="anio">
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <button onclick="generarRFC();" class="btn btn-primary">Generar RFC</button>
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <label id="resultado" class="form-label fw-bold">
+                        Resultado:
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="rfcmiriam.js"></script>
+</body>
+</html>

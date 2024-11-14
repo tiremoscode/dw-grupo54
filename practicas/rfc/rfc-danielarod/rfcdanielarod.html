@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de RFC</title>
+</head>
+<body>
+    <h1>Generador de RFC</h1>
+
+    <div class="container">
+        <div class="row">
+            <label for="nombre">Ingresa tu Nombre</label>
+            <input type="text" placeholder="Nombre" id="nombre" required>
+        </div>
+
+        <div class="row">
+            <label for="apellidoPaterno">Ingresa tu Apellido Paterno</label>
+            <input type="text" placeholder="Apellido Paterno" id="apellidoPaterno"required>
+        </div>
+
+        <div class="row">
+            <label for="apellidoMaterno">Ingresa tu Apellido Materno</label>
+            <input type="text" placeholder="Apellido Materno" id="apellidoMaterno"required>
+        </div>
+       
+        <div class="row">
+            <label for="anio">Ingresa año de nacimiento</label>
+            <input type="number" placeholder="Año" id="anio" required>
+        </div>
+
+        <div class="row">
+            <label for="mes">Ingresa mes de nacimiento</label>
+            <input type="number" placeholder="Mes" id="mes" required>
+        </div>
+
+        <div class="row">
+            <label for="dia">Ingresa día de nacimiento</label>
+            <input type="number" placeholder="Día" id="dia" required>
+            
+        </div>
+
+
+        <button onclick="generarRFC();">Generar RFC</button>
+
+
+        <div id="rfc"></div>
+     
+    </div>
+  <script src="/practicas/rfc/rfc-danielarod/rfcdanierarod.js"></script>  
+</body>
+</html>
