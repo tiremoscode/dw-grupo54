@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon API</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pokémon API</h1>
+        <div class="buscarPokemon">
+            <input type="text" id="buscarPokemon" placeholder="Buscar Pokémon por nombre" />
+            <button id="buscarBoton">Buscar</button>
+        </div>
+    </header>
+
+    <div class="caja">
+        <!-- Lista de Pokemones -->
+        <div id="listaPokemones" class="listaPokemones"></div>
+
+        <!-- Pokémon seleccionado -->
+        <div id="pokemonSeleccionado" class="pokemonSeleccionado"></div>
+    </div>
+
+    <script src="promesasws.js"></script>
+</body>
+
+</html>
