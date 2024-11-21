@@ -9,7 +9,7 @@ function limpiarHTML(_selector) {
     }
 }
 
-function obtenerFechaActual(){
+function obtenerFechaActual() {
     const fecha = new Date();
     const dia = String(fecha.getDate()).padStart(2, '0');
     const mes = String(fecha.getMonth() + 1).padStart(2, '0');
@@ -18,11 +18,11 @@ function obtenerFechaActual(){
     return fechaFormateada;
 }
 
-function construirURL( _fechaInicio, _fechaFin) {
+function construirURL(_fechaInicio, _fechaFin) {
     //Definición de parámetros.-.
     //Solicitar una APi Key En  
-    APIKey = null;
-    if(!APIKey){
+    APIKey = "9hy3ChrYfpfQQkQnfaTBtLGfuXeFrdGo844HcOVJ";
+    if (!APIKey) {
         console.log("Solicitar una APi Key En https://api.nasa.gov/ y agregar en código String");
     }
 
@@ -33,9 +33,9 @@ function construirURL( _fechaInicio, _fechaFin) {
     return "https://api.nasa.gov/planetary/apod?api_key=" + APIKey + "&start_date=" + fechaInicio + "&end_date=" + fechaFin;
 }
 
-function obtenerAPINasa( _fechaInicio, _fechaFin) {
+function obtenerAPINasa(_fechaInicio, _fechaFin) {
 
-    url = construirURL( _fechaInicio, _fechaFin);
+    url = construirURL(_fechaInicio, _fechaFin);
 
     limpiarHTML("#crearTarjetas");
 
@@ -49,7 +49,7 @@ function obtenerAPINasa( _fechaInicio, _fechaFin) {
             //Me interesan sólo imagenes.-.
             for (let i = 0; i < data.length; i++) {
                 //Obtener atributos.-.
-                if(data[i].media_type == "image" ){
+                if (data[i].media_type == "image") {
                     fecha = data[i].date;
                     titulo = data[i].title;
                     describe = data[i].explanation;
@@ -107,9 +107,9 @@ myModal.addEventListener('shown.bs.modal', (event) => {
 
 })
 
-function obtenerDatosModalNasa(_fechaInicio, _titulo){
+function obtenerDatosModalNasa(_fechaInicio, _titulo) {
     //Debido a que se requiere solo 1 dato, se coloca fechaInicio en parámetro de inicio y fin.-.
-    url = construirURL( _fechaInicio, _fechaInicio);
+    url = construirURL(_fechaInicio, _fechaInicio);
 
     fetch(url)
         .then(respuesta => respuesta.json()) // convierte la respuesta en un objeto JSON.
@@ -123,10 +123,10 @@ function obtenerDatosModalNasa(_fechaInicio, _titulo){
 
             cadena = fecha + "|" + titulo + "|" + describe + "|" + urlImagen;
 
-            document.getElementById('modalNasaFecha').textContent = fecha; 
-            document.getElementById('modalNasaTitulo').textContent = titulo; 
-            document.getElementById('modalNasaDescribe').textContent = describe; 
-            document.getElementById('modalNasaImagen').src = urlImagen; 
+            document.getElementById('modalNasaFecha').textContent = fecha;
+            document.getElementById('modalNasaTitulo').textContent = titulo;
+            document.getElementById('modalNasaDescribe').textContent = describe;
+            document.getElementById('modalNasaImagen').src = urlImagen;
 
         })
         .catch(error => {
