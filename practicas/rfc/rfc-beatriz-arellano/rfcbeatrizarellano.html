@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generado de RFC mexicano</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Generar RFC Mexicano</h1>
+
+        <div class="form-group mb-3">
+            <label for="nombre">Nombre(s)</label>
+            <input class="form-control" type="text" id="nombre" placeholder="Ingresa tu nombre(s)" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="apellidoPaterno">Apellido Paterno</label>
+            <input class="form-control" type="text" id="apellidoPaterno" placeholder="Ingresa tu Apellido Paterno" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="apellidoMaterno">Apellido Materno</label>
+            <input class="form-control" type="text" id="apellidoMaterno" placeholder="Ingresa tu Apellido Materno" required>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input class="form-control" type="date" id="fechaNacimiento" required>
+        </div>
+
+        <button class="btn" onclick="generarRfc();">Generar RFC</button>
+
+        <div class="alert alert-success mt-3" id="resultado" style="display: none;">
+            <strong>¡Éxito!</strong> Su RFC es: <span id="rfcResult"></span>
+        </div>
+    </div>
+    
+    <script src="rfcbeatrizarellano.js"></script> 
+</body>
+</html>
