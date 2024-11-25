@@ -3,43 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generado de RFC mexicano</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <title>Generador de RFC</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo de estilos personalizado -->
 </head>
-
 <body>
+    <div class="container text-center bg-purple p-5 rounded">
+        <h1 class="text-light mb-4"><b>Bienvenido/a</b></h1>
+        <h3 class="text-light mb-4">Ingresa tus datos y genera tu RFC*</h3>
 
-    <div class="container">
-        <h1>Generar RFC Mexicano</h1>
+        <form class="mx-auto" style="max-width: 400px;">
+            <!-- Nombre -->
+            <div class="mb-3">
+                <label for="name" class="form-label text-light">Ingresa tu(s) nombre(s):</label>
+                <input type="text" id="name" class="form-control" placeholder="Ejemplo: María Fernanda">
+            </div>
+            <!-- Apellido Paterno -->
+            <div class="mb-3">
+                <label for="lastName1" class="form-label text-light">Ingresa tu primer apellido:</label>
+                <input type="text" id="lastName1" class="form-control" placeholder="Ejemplo: Pérez">
+            </div>
+            <!-- Apellido Materno -->
+            <div class="mb-3">
+                <label for="lastName2" class="form-label text-light">Ingresa tu segundo apellido:</label>
+                <input type="text" id="lastName2" class="form-control" placeholder="Ejemplo: Gómez">
+            </div>
+            <!-- Fecha de nacimiento -->
+            <div class="mb-4">
+                <label for="date" class="form-label text-light">Ingresa tu fecha de nacimiento:</label>
+                <input type="date" id="date" class="form-control">
+            </div>
+            <!-- Botón -->
+            <button type="button" class="btn btn-dark" onclick="generateRfc()">Enviar</button>
+        </form>
 
-        <div class="form-group mb-3">
-            <label for="nombre">Nombre(s)</label>
-            <input class="form-control" type="text" id="nombre" placeholder="Ingresa tu nombre(s)" required>
-        </div>
-
-        <div class="form-group mb-3">
-            <label for="apellidoPaterno">Apellido Paterno</label>
-            <input class="form-control" type="text" id="apellidoPaterno" placeholder="Ingresa tu Apellido Paterno" required>
-        </div>
-
-        <div class="form-group mb-3">
-            <label for="apellidoMaterno">Apellido Materno</label>
-            <input class="form-control" type="text" id="apellidoMaterno" placeholder="Ingresa tu Apellido Materno" required>
-        </div>
-
-        <div class="form-group mb-3">
-            <label for="fechaNacimiento">Fecha de Nacimiento</label>
-            <input class="form-control" type="date" id="fechaNacimiento" required>
-        </div>
-
-        <button class="btn" onclick="generarRfc();">Generar RFC</button>
-
-        <div class="alert alert-success mt-3" id="resultado" style="display: none;">
-            <strong>¡Éxito!</strong> Su RFC es: <span id="rfcResult"></span>
+        <!-- Resultado del RFC -->
+        <div id="rfc-container" class="mt-5 text-center d-none">
+            <h4 class="text-light">RFC</h4>
+            <p id="rfc-result" class="text-light fs-4"></p>
         </div>
     </div>
+    <footer class="text-center mt-5 text-muted">*La aplicación genera homoclave estandarizada</footer>
     
-    <script src="rfcbeatrizarellano.js"></script> 
+    <script src="rfcbeatrizarellano.js"></script> <!-- Archivo JavaScript -->
 </body>
 </html>
