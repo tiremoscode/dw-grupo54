@@ -1,97 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokemon Beatriz Arellano</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <!-- Cargar el archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Pokemon Database</h1>
-    <p>Explora información sobre tus Pokémon favoritos</p>
-  </header>
-  <main>
-    <div id="pokemon-container" class="pokemon-container">
-      <!-- Los datos de Pokémon se cargarán aquí dinámicamente -->
-    </div>
-  </main>
-  <footer>
-    <p>Creado por Beatriz Arellano</p>
-  </footer>
-  <script>
-    // Base de datos de Pokemon
-    const pokemonDatabase = {
-      pikachu: {
-        nombre: "Pikachu",
-        tipo: "Electrico",
-        ataque: "Impact Trueno",
-        color: "Amarillo",
-        evolucion: "Raichu"
-      },
-      bulbasaur: {
-        nombre: "Bulbasaur",
-        tipo: "Planta",
-        ataque: "Latigo Cepa",
-        color: "Verde",
-        evolucion: "Ivysaur"
-      },
-      charmander: {
-        nombre: "Charmander",
-        tipo: "Fuego",
-        ataque: "Lanza Llama",
-        color: "Rojo",
-        evolucion: "Charizard"
-      },
-      squirtle: {
-        nombre: "Squirtle",
-        tipo: "Agua",
-        ataque: "Chorro de Agua",
-        color: "Azul",
-        evolucion: "Wartortle"
-      }
-    };
+    <h1>Pokémon Search</h1>
+    <input type="text" id="pokemonName" placeholder="Enter Pokémon name">
+    <button onclick="searchPokemon()">Search</button>
+    <div id="pokemonInfo"></div>
 
-    // Función para mostrar los Pokémon en la página
-    const cargarPokemon = () => {
-      const container = document.getElementById("pokemon-container");
-      Object.keys(pokemonDatabase).forEach((key) => {
-        const pokemon = pokemonDatabase[key];
+    <footer>
+        <p>Realizado por Beatriz Arellano</p>
+    </footer>
 
-        // Crear elementos HTML para cada Pokémon
-        const card = document.createElement("div");
-        card.className = "pokemon-card";
+    <!-- Cargar los archivos JavaScript externos -->
+    <script src="promesasPokemon.js"></script>
+    <script src="searchPokemon.js"></script>
 
-        const nombre = document.createElement("h2");
-        nombre.textContent = pokemon.nombre;
-
-        const tipo = document.createElement("p");
-        tipo.textContent = `Tipo: ${pokemon.tipo}`;
-
-        const ataque = document.createElement("p");
-        ataque.textContent = `Ataque: ${pokemon.ataque}`;
-
-        const color = document.createElement("p");
-        color.textContent = `Color: ${pokemon.color}`;
-
-        const evolucion = document.createElement("p");
-        evolucion.textContent = `Evolución: ${pokemon.evolucion}`;
-
-        // Agregar todo al contenedor de la tarjeta
-        card.appendChild(nombre);
-        card.appendChild(tipo);
-        card.appendChild(ataque);
-        card.appendChild(color);
-        card.appendChild(evolucion);
-
-        // Añadir la tarjeta al contenedor principal
-        container.appendChild(card);
-      });
-    };
-
-    // Cargar los datos de Pokémon al cargar la página
-    window.onload = cargarPokemon;
-  </script>
 </body>
 </html>
-

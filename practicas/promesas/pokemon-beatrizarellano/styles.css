@@ -1,70 +1,68 @@
 /* generacion de estilos para la p[agina de pokemones */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff; /* Azul cielo */
-    color: #4a4a4a;
-  }
-  
-  header {
     text-align: center;
-    padding: 20px;
-    background-color: #ffccf2; /* Rosa claro */
-    color: #6a0572; /* Morado oscuro */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  header h1 {
-    margin: 0;
+    margin: 20px;
+    background-color: #ffe4e6; /* Fondo rosado */
+    color: #d63384; /* Texto en tonos rosados */
+}
+
+h1 {
+    color: #c2185b; /* Color del título */
     font-size: 2.5em;
-  }
-  
-  header p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
-  }
-  
-  .pokemon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
-  }
-  
-  .pokemon-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s;
-    border: 2px solid #ffccf2; /* Rosa claro */
-  }
-  
-  .pokemon-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .pokemon-card h2 {
-    color: #6a0572; /* Morado oscuro */
-    font-size: 1.8em;
-    margin: 10px 0;
-  }
-  
-  .pokemon-card p {
-    font-size: 1em;
-    margin: 5px 0;
-    color: #4a4a4a; /* Gris oscuro */
-  }
-  
-  footer {
-    text-align: center;
+}
+
+input {
     padding: 10px;
-    background-color: #ffccf2; /* Rosa claro */
-    color: #6a0572; /* Morado oscuro */
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #f06292;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f06292; /* Botón rosado */
+    color: white;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e91e63; /* Botón más oscuro al pasar el cursor */
+}
+
+#pokemonInfo {
     margin-top: 20px;
-  }
-  
+}
+
+.pokemon-info {
+    border: 1px solid #f48fb1; /* Borde rosado */
+    border-radius: 10px;
+    background-color: #fce4ec; /* Fondo más claro */
+    color: #d63384; /* Texto rosado */
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.pokemon-info h2 {
+    text-align: center;
+    color: #ad1457; /* Tono rosado fuerte */
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f8bbd0; /* Fondo rosado claro */
+    color: #880e4f; /* Texto rosado oscuro */
+    font-size: 1em;
+    border-top: 1px solid #f06292; /* Borde superior */
+}
