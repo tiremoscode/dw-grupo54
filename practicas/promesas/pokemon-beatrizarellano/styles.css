@@ -1,0 +1,70 @@
+/* generacion de estilos para la p[agina de pokemones */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Azul cielo */
+    color: #4a4a4a;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffccf2; /* Rosa claro */
+    color: #6a0572; /* Morado oscuro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+  }
+  
+  .pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .pokemon-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 2px solid #ffccf2; /* Rosa claro */
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pokemon-card h2 {
+    color: #6a0572; /* Morado oscuro */
+    font-size: 1.8em;
+    margin: 10px 0;
+  }
+  
+  .pokemon-card p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #4a4a4a; /* Gris oscuro */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffccf2; /* Rosa claro */
+    color: #6a0572; /* Morado oscuro */
+    margin-top: 20px;
+  }
+  
