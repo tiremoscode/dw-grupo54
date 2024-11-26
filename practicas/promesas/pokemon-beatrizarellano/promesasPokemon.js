@@ -1,4 +1,4 @@
-// Base de datos inicial de Pokémon
+// Base de datos de Pokemon Beatriz Arellano
 const pokemonDatabase = {
     pikachu: {
       nombre: "Pikachu",
@@ -30,88 +30,17 @@ const pokemonDatabase = {
     }
   };
   
-  // Funcion para obtener un Pokemon por nombre
-  const obtenerPokemon = (nombrePokemon) => {
-    return new Promise((resolve, reject) => {
-      const pokemon = pokemonDatabase[nombrePokemon.toLowerCase()];
-      if (pokemon) {
-        resolve(pokemon); // Devuelve el Pokemon encontrado
-      } else {
-        reject(`No se encontro el Pokemon ${nombrePokemon}, ¡intenta capturarlo!`);
-      }
-    });
-  };
+  // Definir las variables globalmente para cada Pokemon
+  Object.keys(pokemonDatabase).forEach((key) => {
+    window[key] = pokemonDatabase[key]; // Agregar cada Pokémon al objeto global "window"
+  });
   
-  // Funcion para agregar nuevos Pokemon
-  const agregarNuevosPokemones = (nuevosPokemones) => {
-    return new Promise((resolve) => {
-      Object.assign(pokemonDatabase, nuevosPokemones);
-      resolve("Nuevos Pokemones agregados exitosamente.");
-    });
-  };
+  // Ahora puedes acceder directamente a los Pokemon escribiendo su nombre en la consola directamente
+  console.log(pikachu);
+  console.log(charmander);
+  console.log(squirtle);
   
-  // Promesa para buscar Pokemon por color
-  const buscarPokemonPorColor = (color) => {
-    return new Promise((resolve, reject) => {
-      const pokemonEncontrado = Object.values(pokemonDatabase).find(
-        (pokemon) => pokemon.color.toLowerCase() === color.toLowerCase()
-      );
-      if (pokemonEncontrado) {
-        resolve(pokemonEncontrado);
-      } else {
-        reject(`No hay Pokemon del color ${color}, ¡necesitas atrapar nuevos!`);
-      }
-    });
-  };
-  
-  // Nuevos Pokemones
-  const nuevosPokemones = {
-    jigglypuff: {
-      nombre: "Jigglypuff",
-      tipo: "Normal",
-      ataque: "Canto",
-      color: "Rosa",
-      evolucion: "Wigglytuff"
-    },
-    eevee: {
-      nombre: "Eevee",
-      tipo: "Normal",
-      ataque: "Ataque Rapido",
-      color: "Cafe",
-      evolucion: "Vaporeon, Jolteon o Flareon"
-    },
-    gengar: {
-      nombre: "Gengar",
-      tipo: "Fantasma/Veneno",
-      ataque: "Bola Sombra",
-      color: "Morado",
-      evolucion: "Mega Gengar"
-    }
-  };
-  
-  // Ejecucion del flujo
-  obtenerPokemon("Pikachu")
-    .then((pokemon) => {
-      console.log("Pokemon encontrado:", pokemon);
-      console.log(
-        `El Pokemon ${pokemon.nombre} tiene los siguientes datos: Tipo: ${pokemon.tipo}, Ataque: ${pokemon.ataque}, Color: ${pokemon.color}, Evolucion: ${pokemon.evolucion}`
-      );
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-  
-  buscarPokemonPorColor("Rosa")
-    .then((pokemon) => {
-      console.log(`Pokemon encontrado del color Rosa: ${pokemon.nombre}`);
-    })
-    .catch((error) => {
-      console.log(error);
-      return agregarNuevosPokemones(nuevosPokemones);
-    })
-    .then((mensaje) => {
-      if (mensaje) console.log(mensaje);
-      console.log("Nuevos Pokemones agregados:", nuevosPokemones);
-      console.log("Base de datos actualizada:", pokemonDatabase);
-    });
+  // Acceder a sus propiedades de cada Pokemon directamente
+  console.log(charmander.nombre); 
+  console.log(squirtle.ataque);   
   
