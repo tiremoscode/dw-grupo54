@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Pacifico";
+    src: url('recursos/Pacifico/Pacifico-Regular.ttf');
+}
+
+* {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    margin: 0%;
+    padding: 0%;
+}
+
+.formulario {
+    background-color: fuchsia;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    max-width: 60%;
+    height: 720px;
+    border-radius: 25px;
+    border: 3px solid rgb(149, 24, 180);
+    z-index: 5;
+}
+
+div {
+    background:none;
+    text-align: center;
+}
+
+.cajahija {
+    height: 789px;
+    position: absolute;
+    right: 0%;
+    left: 0%;
+    top: 0%;
+}
+
+button {
+    background-color: rgb(248, 83, 185);
+    border: 2px solid;
+    border-color: rgb(128, 21, 150);
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: rgb(59, 8, 70) ;
+    font-weight: bold;
+}
+
+#Titulo {
+    font-size: 30px;
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+
+input[type="number"],input[type="text"]{
+    color: blue;
+    padding: 10px;
+    margin: 0.8rem;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(184, 244, 247);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input[type="number"]:focus,input[type="text"]:focus {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(116, 165, 230);
+    color: #ffffff;
+}
+input[type="number"]::selection,input[type="text"]::selection{
+    border: 3px solid rgba(31, 19, 19,0.8);
+    background-color: rgb(116, 222, 230);
+    color: #4579d8;
+}
+#limpiar {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+    margin-top: 10px;
+    z-index: 15;
+}
+
+.botoncentral:hover, .botondelgado:hover{
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: rgb(250, 6, 140);
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+}
+.botondelgado {
+    padding: 1% 3%;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+
+}
+.fondo{
+    margin: 1rem;
+}
+
+@media screen and (max-width: 660px) {
+    .formulario {
+        height: 780px;
+        }
+        .cajahija {
+            height: 780px;
+        }
+        #RFC{
+            font-size: 20px;
+        }
+}
+@media screen and (max-width: 350px) {
+    .formulario {
+        height: 850px;
+        }
+        .cajahija {
+            height: 850px;
+        }
+        #RFC{
+            font-size: 10px;
+        }
+}

@@ -1,0 +1,59 @@
+:root {
+    --color-verde: #4caf50;
+    --color-blanco: #FFF;
+    --color-morado: #F4f4;
+    --color-negro: #000;
+    --color-cafe: brown;
+    --color-gris: #333;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* Filas: Header, Contenido y Footer */
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: var(--color-morado);
+    padding: 20px;
+    color: var(--color-negro);
+}
+
+main {
+    grid-area: content;
+    background-color: var(--color-cafe);
+    color: var(--color-blanco);
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 20px;
+}
+
+.contenido {
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

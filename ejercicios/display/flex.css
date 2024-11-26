@@ -1,0 +1,34 @@
+/* Flexbox
+Un diseño de tipo layout unidimensional.
+Una dimensi+on. Por fila (horizontal) o columna (vertical)
+
+Propiedades Clave:
+
+display: flex; Activa el modelo de diseño flexible
+justify-content: Alinea los elementos a lo largo del eje principal. Por defecto el eje horizontal.
+align-items. Alinea los elementos a lo largo del eje transversal. por defecto el eje vertical.
+flex-direction. Establece la dirección de nuestro eje principal - row o column.
+
+*/
+
+.alumnasGrupo54 {
+    display: flex;
+    /* Distribuir el espacio entre los elementos */
+    justify-content: space-between;
+    /* Centrar los elementos de manera vertical */
+    align-items: center;
+    /* fondo */
+    background-color: #f3c4d5;
+    height: 100vh;
+    /* Bety compro 16 pulgadas */
+    flex-direction: row-reverse;
+}
+
+.alumna {
+    width: 100px;
+    height: 100px;
+    background-color: #4aaf50;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}

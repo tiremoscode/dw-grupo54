@@ -1,0 +1,29 @@
+/* GRID
+
+uN modelo de diseño bidimensional.
+Signfica que organiza elementos en filas y en columnas.
+Cuando necesitamos una estructura de diseño
+más compleja con múltiples filas y coluimnas.
+
+display: grid; Activa el diseño en cuadrícula.
+grid-template-columns. Define las columnas del grid.
+grid-template-rows. Defin las filas del grid.
+grid-gap. define el espacio entre las celdas de la cuadrícula.
+
+*/
+
+.alumnasGrupo54 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    height: 100vh;
+    background-color: #f3c4d5;
+}
+
+.alumna {
+    height: 100px;
+    background-color: #4aaf50;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+}
