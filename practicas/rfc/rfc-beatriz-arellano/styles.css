@@ -1,0 +1,102 @@
+/* Estilo del contenedor principal */
+.bg-purple {
+    background-color: #f8e7fc; /* Fondo lila pastel */
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 2rem;
+}
+
+/* Estilo del texto */
+.text-light {
+    color: #7239ac; /* Morado oscuro */
+    font-family: 'Poppins', sans-serif; /* Fuente elegante */
+    font-weight: bold;
+}
+
+/* Botón de envío */
+.btn-dark {
+    background-color: #f39ac8; /* Rosa pastel */
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #fc7fac; /* Rosa vibrante */
+    color: #fff7e6; /* Blanco cálido */
+    transform: scale(1.05); /* Animación de hover */
+}
+
+/* Inputs */
+input.form-control {
+    background-color: #fff8fd; /* Blanco con toque rosado */
+    border: 2px solid #e6c6ff; /* Bordes lilas */
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #5a4e80;
+    transition: all 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color: #ff91c6; /* Rosa vibrante al enfoque */
+    box-shadow: 0px 0px 10px rgba(255, 145, 198, 0.5); /* Sombra al enfoque */
+    outline: none;
+}
+
+/* Contenedor del RFC */
+#rfc-container {
+    border: 2px solid #ffdeff; /* Bordes en rosa suave */
+    padding: 15px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffe4f5, #f8e7fc); /* Gradiente mágico */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+/* Estilo del resultado del RFC */
+#rfc-result {
+    color: #7239ac; /* Morado oscuro */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilo del footer */
+footer {
+    font-size: 0.9rem;
+    color: #5a4e80; /* Morado suave */
+    margin-top: 2rem;
+}
+
+/* Estilo del h1 y h3 para encabezados */
+h1 {
+    font-size: 2.5rem;
+    color: #7239ac; /* Morado oscuro */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra en texto */
+}
+
+h3 {
+    color: #fc7fac; /* Rosa pastel */
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+/* Efecto hover en los labels */
+.form-label:hover {
+    color: #ff91c6; /* Cambia a rosa vibrante */
+}
+
+/* Fondo del body */
+body {
+    background: linear-gradient(120deg, #f3e7fd, #d8f3fc, #fff7e6); /* Fondo de unicornio */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Transición general para suavidad */
+* {
+    transition: all 0.3s ease;
+}
